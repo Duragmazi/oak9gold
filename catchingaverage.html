@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+    <html>
+        <style>
+            body{
+                text-align:center;
+                background-color:purple;
+            }
+            
+            ul{
+                list-style:none;
+                display:inline-flex;          
+            }
+            
+            a{
+                border:10px groove yellow;
+                text-decoration:none;
+                color:red;
+            }
+            
+            li{
+             margin:10px;
+                font-size:20px;
+            }
+
+        </style>
+        
+        <script type="text/javascript">
+            function calcuate() {
+                var completedPasses = completed.ttlcatches.value-completed.ttldropedpases.value;
+                document.getElementById("gameCatches").value = completedPasses;           }
+        </script>
+
+        <head>
+          <title>Catching average</title>  
+        </head>
+        
+        <body>
+            <h1>Catching average</h1>
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="leadership.html">Leadership</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="football.html">Football</a></li>
+                <li><a href="form.html">Football Quiz</a></li>
+            </ul>
+           
+           <form name="completed">
+                <label for="draft"> Enter Total catches</label>
+                <input type="text" name="ttlcatches" id="catches" value=""><br>
+                <label for="draft">Enter total droped passes</label>
+                <input type="text" name="ttldropedpases" id="droped" value=""><br>
+               <input type="button" name="button1" id="btn" value="Submit" onclick="calcuate()"><br>
+                <label for="draft"> Game catches</label>
+
+                <input type="text" name="gameCatches" id="gameCatches" value=""><br>
+             </form>
+        </body>
+    </html>
